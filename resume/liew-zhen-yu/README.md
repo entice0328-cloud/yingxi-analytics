@@ -1,17 +1,11 @@
 # For Liew Zhen Yu (draft)
 
-English CV for a **Malaysia** data analytics internship. Not Zhang Liyuan’s Wuhan resume.
+不要用 Word 打开。在预览里点顶栏 **Liew CV**，或打开：
 
-## What to do before sending
+- 简历网页：`/liew`（可点「打印 / 另存 PDF」）
+- **项目看板：** `/liew/project`  ← 仓单分析做在这里
+- 本机双击：`OPEN_IN_BROWSER.html`
 
-1. Confirm DHL was part-time (dates overlap PSB and APU). If it was full-time, delete “Part-time”.
-2. Publish `warehouse-flow-analytics/` on **your own GitHub**, then put the URL on the CV. Do not claim 营析; that project is Zhang Liyuan’s.
-3. Add LinkedIn if you have one. Leave it off if you do not.
-4. Fill the optional DHL number only if it is real.
-5. Do not put lecturer phone/email on the CV.
+Python 源文件在 `warehouse-flow-analytics/`（`python3 analyze.py`）。
 
-## Files
-
-- `Liew_Zhen_Yu_Data_Analytics_Intern.docx` — send this
-- `Liew_Zhen_Yu_Data_Analytics_Intern.md` — same content
-- `warehouse-flow-analytics/` — project you can put on GitHub (`python3 analyze.py`)
+发出 Word 前请确认 DHL 是否兼职，并把 GitHub 换成他自己的仓库。不要用张立元的「营析」。

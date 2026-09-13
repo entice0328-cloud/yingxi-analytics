@@ -24,7 +24,7 @@ npm run dev
 
 简历 Markdown 也在 `resume/张力元-数据分析实习生.md`。Word 版在 `resume/张力元-数据分析实习生.docx`。
 
-朋友 Liew Zhen Yu（马来西亚数据分析实习）的英文草稿在 `resume/liew-zhen-yu/`。
+朋友 Liew Zhen Yu 的材料：预览顶栏 **Liew CV**，项目看板 `/liew/project`。文件在 `resume/liew-zhen-yu/`（HTML / PDF，不必开 Word）。
 
 ## 简历项目可以怎么写
 
