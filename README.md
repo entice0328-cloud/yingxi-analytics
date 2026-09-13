@@ -24,6 +24,8 @@ npm run dev
 
 简历 Markdown 也在 `resume/张力元-数据分析实习生.md`。Word 版在 `resume/张力元-数据分析实习生.docx`。
 
+朋友 Liew Zhen Yu（马来西亚数据分析实习）的英文草稿在 `resume/liew-zhen-yu/`。
+
 ## 简历项目可以怎么写
 
 独立完成电商经营分析台：用 SQL 口径计算 GMV、客单价、退货率与漏斗，按类目和渠道切片，针对退货、加购流失和复购给出运营建议。面试可打开网页筛选并讲结论。
