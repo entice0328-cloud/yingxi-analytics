@@ -1,69 +1,88 @@
-export const STAGES = [
-  "wishlist",
-  "applied",
-  "written",
-  "interview",
-  "offer",
-  "rejected",
+export const CATEGORIES = [
+  "数码配件",
+  "家居收纳",
+  "个护清洁",
+  "食品饮料",
+  "运动户外",
 ] as const;
 
-export type Stage = (typeof STAGES)[number];
+export const CHANNELS = ["自然搜索", "信息流广告", "直播", "老客复访"] as const;
 
-export const STAGE_LABEL: Record<Stage, string> = {
-  wishlist: "想投",
-  applied: "已投",
-  written: "笔试",
-  interview: "面试",
-  offer: "Offer",
-  rejected: "未过",
-};
+export type Category = (typeof CATEGORIES)[number];
+export type Channel = (typeof CHANNELS)[number];
+export type RangeKey = "7d" | "30d" | "90d";
 
-export const SOURCES = [
-  "Boss 直聘",
-  "实习僧",
-  "智联招聘",
-  "前程无忧",
-  "公司官网",
-  "学校双选会",
-  "内推",
-  "小红书 / 牛客",
-] as const;
+export interface Filters {
+  range: RangeKey;
+  category: "all" | Category;
+  channel: "all" | Channel;
+}
 
-export type Source = (typeof SOURCES)[number] | string;
+export interface FunnelRow {
+  date: string;
+  category: Category;
+  channel: Channel;
+  views: number;
+  carts: number;
+  orders: number;
+  pays: number;
+}
 
-export type District =
-  | "光谷 / 东湖高新"
-  | "武昌"
-  | "汉口 / 江汉"
-  | "汉阳 / 沌口"
-  | "远程 / 可协商";
-
-export interface Application {
+export interface OrderRow {
   id: string;
-  company: string;
-  role: string;
-  district: District;
-  source: string;
-  stage: Stage;
-  salary: string;
-  appliedAt: string;
-  nextAction: string;
-  nextActionAt: string;
-  jdHighlights: string;
-  notes: string;
-  createdAt: string;
-  updatedAt: string;
+  date: string;
+  userId: number;
+  category: Category;
+  channel: Channel;
+  product: string;
+  gmv: number;
+  refund: number;
+  isNew: boolean;
 }
 
-export interface CompanyProfile {
-  name: string;
-  district: District;
-  tags: string[];
-  hiring: string;
-  note: string;
+export interface DailyPoint {
+  date: string;
+  gmv: number;
+  orders: number;
+  refund: number;
 }
 
-export type ApplicationDraft = Omit<
-  Application,
-  "id" | "createdAt" | "updatedAt"
->;
+export interface SliceRow {
+  key: string;
+  gmv: number;
+  orders: number;
+  aov: number;
+  refundRate: number;
+  payRate: number;
+}
+
+export interface FunnelTotals {
+  views: number;
+  carts: number;
+  orders: number;
+  pays: number;
+}
+
+export interface Metrics {
+  gmv: number;
+  orders: number;
+  aov: number;
+  refundRate: number;
+  refundAmount: number;
+  payRate: number;
+  newGmvShare: number;
+  returningGmvShare: number;
+  repeatUserShare: number;
+  repeatUsers: number;
+  payingUsers: number;
+  daily: DailyPoint[];
+  byCategory: SliceRow[];
+  byChannel: SliceRow[];
+  funnel: FunnelTotals;
+  prev: {
+    gmv: number;
+    orders: number;
+    refundRate: number;
+    aov: number;
+  } | null;
+}
