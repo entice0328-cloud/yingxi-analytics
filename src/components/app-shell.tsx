@@ -21,7 +21,7 @@ const NAV = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const printHide = pathname === "/resume" || pathname === "/liew";
+  const printHide = pathname === "/resume";
 
   return (
     <div className="flex min-h-full flex-col bg-[radial-gradient(1100px_420px_at_0%_-10%,oklch(0.94_0.03_250),transparent)]">
@@ -66,17 +66,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               className="inline-flex items-center rounded-full px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground"
             >
               简历
-            </Link>
-            <Link
-              href="/liew"
-              className={cn(
-                "inline-flex items-center rounded-full px-3 py-1.5 text-sm",
-                pathname.startsWith("/liew")
-                  ? "bg-primary text-primary-foreground"
-                  : "text-muted-foreground hover:text-foreground",
-              )}
-            >
-              Liew CV
             </Link>
           </nav>
         </div>

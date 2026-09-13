@@ -22,9 +22,7 @@ npm run dev
 - `/method` 口径与 SQL
 - `/resume` 一页纸简历（可打印成 PDF）
 
-简历 Markdown 也在 `resume/张力元-数据分析实习生.md`。Word 版在 `resume/张力元-数据分析实习生.docx`。
-
-朋友 Liew Zhen Yu 的材料：预览顶栏 **Liew CV**，项目看板 `/liew/project`。文件在 `resume/liew-zhen-yu/`（HTML / PDF，不必开 Word）。
+简历 Markdown 也在 `resume/张力元-数据分析实习生.md`。Word 版在 `resume/张力元-数据分析实习生.docx`。网页版在 `/resume`。
 
 ## 简历项目可以怎么写
 
