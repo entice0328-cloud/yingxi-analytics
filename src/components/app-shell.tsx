@@ -21,15 +21,11 @@ const NAV = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const printHide = pathname === "/resume";
 
   return (
     <div className="flex min-h-full flex-col bg-[radial-gradient(1100px_420px_at_0%_-10%,oklch(0.94_0.03_250),transparent)]">
       <header
-        className={cn(
-          "sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-md",
-          printHide && "print:hidden",
-        )}
+        className="sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-md"
       >
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <Link href="/" className="min-w-0">
@@ -61,21 +57,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 </Link>
               );
             })}
-            <Link
-              href="/resume"
-              className="inline-flex items-center rounded-full px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground"
-            >
-              简历
-            </Link>
           </nav>
         </div>
       </header>
-      <main
-        className={cn(
-          "mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-6 sm:px-6",
-          printHide && "max-w-none px-0 py-0",
-        )}
-      >
+      <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 py-6 sm:px-6">
         {children}
       </main>
     </div>
