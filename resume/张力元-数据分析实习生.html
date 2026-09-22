@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>张力元 · 数据分析实习生</title>
     <style>
-      body { font: 14px/1.5 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 760px; margin: 28px auto; padding: 0 20px; color: #222; }
-      h1 { margin: 0 0 6px; font-size: 26px; }
-      h2 { font-size: 14px; border-bottom: 1px solid #1f6f6a; color: #1f6f6a; margin: 18px 0 8px; }
+      body { font: 13.5px/1.45 "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 760px; margin: 24px auto; padding: 0 18px; color: #222; }
+      h1 { margin: 0 0 4px; font-size: 26px; }
+      h2 { font-size: 14px; border-bottom: 1px solid #1f6f6a; color: #1f6f6a; margin: 14px 0 6px; }
+      h3 { font-size: 13.5px; margin: 10px 0 4px; }
       .muted { color: #555; }
       a { color: #1f6f6a; }
-      ul { margin: 6px 0; padding-left: 1.2em; }
-      @media print { body { margin: 12mm; } }
+      ul { margin: 4px 0 8px; padding-left: 1.2em; }
+      @media print { body { margin: 10mm; } a { color: #222; text-decoration: none; } }
     </style>
   </head>
   <body>
@@ -27,24 +28,37 @@
     <h2>教育背景</h2>
     <p><strong>Asia Pacific University of Technology &amp; Innovation（APU）</strong><br />
     Bachelor of Computer Science (Data Analytics)　2025 – 至今　本科二年级</p>
-
-    <h2>技能</h2>
-    <p>取数：SQL、MySQL、多表聚合、条件筛选<br />
-    分析：Python、R、描述统计、对比 / 漏斗 / 结构分析<br />
-    呈现：经营看板、指标口径；Power BI（课程使用）</p>
-
-    <h2>项目经历</h2>
-    <p><strong>营析 · 电商经营分析台</strong>　指标口径 · 经营看板</p>
-    <p class="muted">独立完成可在线演示的经营分析作品。90 天店铺为固定种子样本数据，非真实商家后台。看板计算 GMV、退货、漏斗与新老客结构，并给出可执行结论。</p>
+    <p>计算机专业，方向是数据分析。课程按「学过什么、因此能做什么」来写。</p>
+    <h3>大一已修（计算机基础）</h3>
     <ul>
-      <li>近 90 天样本：GMV ¥525,328，订单 6,401，客单价 ¥82，退货率 8.2%，浏览→支付 14.4%。</li>
-      <li>家居收纳退货率 18.8%，高于个护清洁 4.3%。建议先改详情页预期和质检。</li>
-      <li>加购→下单 35.1% 为最大流失；信息流转化 8.5%，老客复访 30.5%。建议预算转向已验证渠道。</li>
-      <li>老客贡献 57.2% GMV，复购用户占付款用户 59.2%。建议部分拉新券改为复购激励。</li>
+      <li>编程：Python Programming、Introduction to C Programming。能用 Python、C 写小程序。</li>
+      <li>数据库与分析设计：Introduction to Databases、Systems Analysis and Design。能建表，用 SQL 做筛选、关联和汇总。</li>
+      <li>计算机系统：Introduction to Networking、Systems Software and Computing Concepts、Integrated Computer Systems、Mathematical Concepts for Computing、Introduction to Artificial Intelligence。覆盖网络、操作系统与组成、计算数学和人工智能入门。</li>
+    </ul>
+    <h3>大二在修（没上过的请删掉）</h3>
+    <ul>
+      <li>Object Oriented Development with Java：用 Java 按面向对象方式拆模块。</li>
+      <li>Probability and Statistical Modelling：描述统计、相关与回归。课程中使用过 R、Power BI。</li>
+      <li>Data Structures、Data Management：数据结构与数据管理。</li>
+      <li>Data Mining and Predictive Modelling：数据挖掘与预测模型入门。</li>
     </ul>
 
-    <h2>个人评价</h2>
-    <p>能把业务问题拆成指标和查询口径，再写成运营听得懂的结论。希望在武汉做取数、看板和复盘。</p>
-    <p class="muted">浏览器打开本文件后可用「打印 → 另存为 PDF」导出投递文件。</p>
+    <h2>目前能独立做的事</h2>
+    <ul>
+      <li>用 SQL 把订单、类目、渠道连起来，算出营业额、客单价、退货率和转化率。</li>
+      <li>把这些指标做成可以筛选的网页，并写成运营能看懂的结论。</li>
+      <li>用 Python、C、Java 完成课程里的程序，而不只是会打开软件。</li>
+    </ul>
+
+    <h2>项目经历</h2>
+    <p><strong>营析 · 网店经营分析页面</strong></p>
+    <p>自己做的分析网页，用来回答：这家店最近赚了多少、货退在哪、客人在哪一步离开、钱是新客还是老客带来的。数据是按固定规则生成的 90 天练习订单，不是某家公司的真实后台。页面可以打开看，指标也可以用 SQL 写出来。</p>
+    <ul>
+      <li>近 90 天：营业额 ¥525,328，订单 6,401，平均每单 ¥82，退货金额占 8.2%，大约每 100 次浏览有 14 次付款。</li>
+      <li>家居收纳退货约 18.8%，个护清洁约 4.3%。应先核对尺寸说明和质量，而不是继续投广告。</li>
+      <li>加购之后只有约 35% 会下单。信息流广告大约 8.5% 的浏览会付款，老客户回访大约 30.5%。预算应先给已经验证过的渠道。</li>
+      <li>老客户贡献约 57% 的营业额。可以留一部分预算做复购，而不是只发新客券。</li>
+    </ul>
+    <p>在线演示：<a href="https://yingxi-analytics.vercel.app">https://yingxi-analytics.vercel.app</a></p>
   </body>
 </html>
