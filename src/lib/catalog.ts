@@ -8,7 +8,6 @@ import {
 } from "./types";
 import { dateShift } from "./dates";
 
-/** Fixed as-of date so demo numbers stay stable across builds. */
 export const AS_OF = "2026-09-12";
 export const HISTORY_DAYS = 90;
 

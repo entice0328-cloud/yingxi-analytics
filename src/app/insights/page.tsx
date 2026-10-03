@@ -19,10 +19,10 @@ export default function InsightsPage() {
       <div className="max-w-3xl">
         <p className="text-sm text-primary">分析结论</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
-          面试时就讲这三件事
+          三条经营建议
         </h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">
-          看板如果只出图、不给动作，就还是作业。下面三条会随筛选条件重算，建议先看近 30 天、全部类目。
+          下面三条会随筛选条件重算。默认先看近 30 天、全部类目。
         </p>
       </div>
       <FilterBar />

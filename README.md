@@ -1,8 +1,8 @@
 # 营析
 
-电商经营分析台。给数据分析 / 数据运营 / 商业分析 / BI 实习演示用：看 GMV、转化漏斗、退货和客户结构，并给出可执行结论。
+电商经营分析台。查看 GMV、转化漏斗、退货和客户结构，并给出经营建议。
 
-数据是固定种子生成的店铺样本，不是真实商家后台。口径和等价 SQL 在「方法 / SQL」页。
+数据按固定规则生成，不是真实商家后台。口径和等价 SQL 在「方法 / SQL」页。
 
 - 在线演示：https://yingxi-analytics.vercel.app
 - 代码：https://github.com/entice0328-cloud/yingxi-analytics

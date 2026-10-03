@@ -14,12 +14,12 @@ export default function OverviewPage() {
   return (
     <div className="flex flex-col gap-5">
       <div className="max-w-3xl">
-        <p className="text-sm text-primary">电商经营分析台 · 样本数据截至 {asOf}</p>
+        <p className="text-sm text-primary">电商经营分析台 · 数据截至 {asOf}</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
           先看生意，再决定把预算和库存往哪放
         </h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">
-          这是一份可演示的经营看板：GMV、退货、类目和渠道都可以筛选。数据是固定种子生成的店铺样本，用来讲清分析思路，不是某家真实商家的后台。
+          按时间、类目和渠道查看 GMV、退货和订单。数据按固定规则生成，时段 90 天，不是真实商家后台。
         </p>
       </div>
       <FilterBar />
